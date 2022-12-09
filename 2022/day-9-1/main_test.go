@@ -1,0 +1,21 @@
+package main
+
+import (
+	"fmt"
+	"testing"
+)
+
+func TestSolveProblem(t *testing.T){
+	results := solveProblem("input_test.txt")	
+	
+    if results != 13 {
+        t.Fatalf(fmt.Sprintf("Expected a score of 13 rather than %d ", results))
+    }
+}
+
+
+
+
+
+
+
