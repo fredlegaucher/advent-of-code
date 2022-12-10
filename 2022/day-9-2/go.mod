@@ -1,3 +1,3 @@
-module fredlegaucher/day-9-1
+module fredlegaucher/day-9-2
 
 go 1.19
