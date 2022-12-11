@@ -67,12 +67,7 @@ func setupMonkeys() []*Monkey {
 func solveProblem(monkeys []*Monkey) int {
 	//play the game
 	for round := 0 ; round < 20 ; round ++{
-		fmt.Println("Round: ",round)
 		roundOfGame(monkeys)
-		
-		for i,m := range monkeys {
-			fmt.Println("Monkey ",i,":",m.items," and times ", m.inspectionTimes)
-		}
 	}
 
 	//find the monkeys with the highest inspection time
