@@ -33,9 +33,7 @@ func solveProblem(fileName string, relevantRow int) int {
 	p := setupProblem(fileName)
 	
 	for _,sensor := range p.sensors {
-		//if sensor.Sx == 8 && sensor.Sy == 7 {
 		sensor.paint(p,relevantRow)
-		//}
 	}  
 	
 	counter := 0
@@ -60,8 +58,6 @@ func (s *Sensor) paint(p *Problem, y int){
 
 }
 
-
-
 func (p *Problem) print(){
 	f, err := os.Create("output.txt")
 	check(err)
@@ -77,8 +73,6 @@ func (p *Problem) print(){
 	}
 	f.Sync()
 }
-
-
 
 func setupProblem(fileName string) *Problem{
 	sensors := make([]*Sensor,0)
